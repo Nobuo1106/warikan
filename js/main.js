@@ -69,11 +69,17 @@
   num.addEventListener('keyup', checkInput);
 // もう一度計算するボタンをクリックすると、以下の関数を処理する。
   reset.addEventListener('click', function() {
+// 「ここに結果を表示します」を表示する
     result.textContent = 'ここに結果を表示します';
+// price(値段)を空にする。
     price.value = '';
+// num(人数)を空にする。
     num.value = '';
+// unit(割り勘単位を100円にする)
     unit.value = 100;
+// disabledクラスを追加する。
     btn.classList.add('disabled');
+// hiddenクラスを追加する。
     this.classList.add('hidden');
   });
 })();
